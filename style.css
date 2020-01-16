@@ -1,0 +1,155 @@
+/* 
+Theme Name:     Fourteenish
+Description:    Child theme for the Twenty Fourteen Theme
+Author:         Jared Bennett
+Author URI:     http://mrjarbenne.ca
+Template:       twentyfourteen
+Version:        1.0
+*/
+
+#page {
+margin-left: auto;
+margin-right: auto;
+}
+
+/*Fix for MP6 hiding the Login menu on Mobile*/
+#wp-admin-bar-root-default #wp-admin-bar-bp-login {
+	display: block;
+}
+
+/* Import the font for the top navigation bar */
+@font-face {
+	font-family: 'NeoRetroDrawRegular';
+	src: url('NeoRetroDraw/NEORD___-webfont.eot');
+	src: url('NeoRetroDraw/NEORD___-webfont.eot?#iefix') format('embedded-opentype'),
+		url('NeoRetroDraw/NEORD___-webfont.woff') format('woff'),
+		url('NeoRetroDraw/NEORD___-webfont.ttf') format('truetype'),
+		url('NeoRetroDraw/NEORD___-webfont.svg#NeoRetroDrawRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeoRetroFillRegular';
+    src: url('neoretro/NEORF___-webfont.eot');
+    src: url('neoretro/NEORF___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('neoretro/NEORF___-webfont.woff') format('woff'),
+         url('neoretro/NEORF___-webfont.ttf') format('truetype'),
+         url('neoretro/NEORF___-webfont.svg#NeoRetroFillRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.site-title a, .nav-menu li a {
+	font-family: NeoRetroFillRegular, Helvetica;
+	font-size: 24px;
+	color: #2b2b2b;
+}
+
+.site-title a{
+	font-family: NeoRetroFillRegular, Helvetica;
+	font-size: 18px;
+	color: #2b2b2b;
+}
+
+/*Change Navigation Menu Colours*/
+
+.site-navigation .current_page_item > a, .site-navigation .current_page_ancestor > a, .site-navigation .current-menu-item > a, .site-navigation .current-menu-ancestor > a {
+    color: #A8B7CA;
+    font-weight: 500;
+}
+
+	.primary-navigation li:hover > a,
+	.primary-navigation li.focus > a {
+		background-color: #797979;
+		color: #fff;
+	}
+ 
+ /*Change Search Menu Colours*/
+ 
+.search-box, .search-toggle, .search-toggle:hover, .search-toggle.active {
+    background-color: #4A688C;
+}  
+  
+/*Change Link Colours*/
+
+#buddypress .activity .activity-comments a, #buddypress .item-list-tabs ul a, .directory #buddypress #subnav a {
+    color: #4A688C;
+}
+  
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    color: #222f40;
+}
+
+/* Make the Avatars Round */
+
+img.avatar, #wp-admin-bar-user-info .avatar {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 1px 0 #fff;
+	-moz-box-shadow: 0 1px 0 #fff;
+	box-shadow: 0 1px 0 #fff;
+}
+
+/* BLOG CREATE FIXES ****************************************************/
+
+/* hide button from header - this will be removed in BP 2.2 */
+body.create-blog h1 a {
+	display: none;
+}
+
+/* error message styling */
+body.create-blog p.error {
+	margin: 0 0 15px;
+	font-size: 90%;
+	display: block;
+	padding: 10px 15px;
+	background-color: #fdc;
+	border: 1px solid #a00;
+	clear: left;
+	color: #800;
+}
+
+body.create-blog .entry-content label {
+	display: block;
+	font-weight: bold;
+}
+
+body.create-blog .entry-content label.checkbox,
+body.create-blog .entry-content label.checkbox strong {
+	font-weight: normal;
+}
+
+body.create-blog .checkbox input {
+	margin-right: .3em;
+}
+
+body.create-blog #submit {
+	margin-top: 2em;
+}
+
+/* BUTTON STYLES ****************************************************/
+
+.widget button, .widget .button, .widget input[type="button"], .widget input[type="reset"], .widget input[type="submit"] {
+    background-color: #797979;
+}
+
+button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: #797979;
+}
+
+.site-content .entry-header,
+.site-content .entry-content,
+.site-content .entry-summary,
+.site-content .entry-meta,
+.page-content {
+	margin: 0 auto;
+	max-width: none;
+}
